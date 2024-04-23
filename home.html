@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <title>Zen AI</title>
+</head>
+
+<header>
+    <div class="titulo"> Zen-AI</div>
+    <div class="criar">
+        <button>
+            Criar chat
+        </button>
+    </div>
+</header>
+
+<body>
+    
+</body>
+
+<footer>
+    <img src="./mandar.png" alt="" class="icone" id="icone">
+    <input type="text" class="pesquisar" id="texto">
+</footer>
+
+<script>
+    document.getElementById('icone').addEventListener('click', function() {
+        var texto = document.getElementById('texto').value;
+
+        var novoElemento = document.createElement('div');
+        novoElemento.textContent = texto;
+        novoElemento.style.color = 'white';
+        novoElemento.style.marginTop = '20px';
+
+        document.body.appendChild(novoElemento);
+    })
+</script>
+
+</html>
